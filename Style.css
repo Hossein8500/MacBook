@@ -1,0 +1,166 @@
+@font-face {
+  font-family: ubunto;
+  src: url(src/Ubuntu-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #202124;
+  font-family: ubunto;
+}
+
+i.fa {
+  color: #bb86fc;
+}
+
+.container {
+  width: 98%;
+  padding: 1%;
+}
+
+.left-side {
+  display: inline-block;
+  background-color: #303134;
+  width: 25%;
+  /* height: 717px; */
+  vertical-align: top;
+  margin: 0.5%;
+  border-radius: 3px;
+}
+
+.left-side .profile-box {
+  position: relative;
+}
+.left-side .profile-box .profile-box-img {
+  /* position: absolute; */
+  width: 100%;
+  border-radius: 3px;
+}
+.left-side .profile-box .profile-box-name {
+  position: absolute;
+  width: 96.1%;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: white;
+  bottom: 3.3px;
+  font-size: 21px;
+}
+
+.left-side .description-box {
+  padding: 15px;
+}
+.left-side .description-box ul {
+  list-style: none;
+}
+.left-side .description-box ul li {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.left-side .description-box span {
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+}
+hr{
+  opacity: 0.5;
+  margin: 0 auto;
+}
+.left-side hr {
+  width: 90%;
+}
+
+.aside-items {
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.aside-items .item-title {
+  margin-left: 5px;
+}
+
+.skill-item {
+  margin-top: 15px;
+}
+.skill-item .progress-box {
+  background-color: #eee;
+  border-radius: 15px;
+  margin-top: 10px;
+  text-align: center;
+}
+.skill-item .progress-bar {
+  background-color: #bb86fc;
+  border-radius: 15px;
+  animation: progress-bar 5s linear 0s forwards;
+}
+.pb40 { max-width: 40%; }
+.pb60 { max-width: 60%; }
+.pb70 { max-width: 70%; }
+.pb80 { max-width: 80%; }
+.pb100 { max-width: 100%; } 
+@keyframes progress-bar {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+.right-side {
+  display: inline-block;
+  width: 72%;
+  margin: 0.5%;
+}
+
+.right-side section {
+  background-color: #303134;
+  margin-bottom: 2%;
+  border-radius: 3px;
+  padding: 28px;
+}
+
+.head-title {
+  color: white;
+  /* margin-left: 5px; */
+}
+
+.right-side-item {
+  color: white;
+}
+.right-side-item h4,
+.right-side-item h3 {
+  margin: 15px 0;
+}
+.right-side-item p {
+  margin: 0 0 30px;
+}
+.lable {
+  background-color: #bb86fc;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #bb86fc;
+  width: 97.8%;
+  height: 15px;
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto;
+  color: white;
+}
+footer a {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .left-side {
+    display: block;
+    width: 99%;
+  }
+  .right-side {
+    display: block;
+    width: 99%;
+  }
+}
